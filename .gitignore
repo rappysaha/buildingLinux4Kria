@@ -1,0 +1,4 @@
+.vscode
+jammy/
+debPkgs_*
+copydebPkgs_kria.sh
