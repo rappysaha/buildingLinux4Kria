@@ -13,6 +13,8 @@ Follow the instructions to install the image on the KRIA board from this link:
 
 <https://xilinx.github.io/kria-apps-docs/kv260/2022.1/linux_boot/ubuntu_22_04/build/html/docs/sdcard.html>
 
+- make sure to reboot the board after the installation is complete.
+
 # Some Tips
 
 - Always shutdown the board properly. Do not unplug the power supply directly.

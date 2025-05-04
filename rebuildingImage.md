@@ -43,7 +43,7 @@ git tag
 Then checkout the latest tag with
 
 ```
-git checkout tags/ubuntu-5.13.0-1005.5
+git checkout tags/debPkgs_5.15.0-1046.50
 ```
 
 ## Configure the Build Environment
@@ -173,3 +173,15 @@ The output should show the ```CONFIG_STRICT_DEVMEM is not set``` indicating the 
 These instructions are for the case when the kernel gets updated automatically.  In this case, the kernel will be updated to the latest version and the configuration changes will be lost.  In this case, the kernel will need to be rebuilt with the desired configuration changes for the new kernel version.
 
 - If you download the kernel source code from the website, jammy, remove the old source code and start from the beginning step [**Configure the Build Environment**](#configure-the-build-environment).
+
+## Error handling: During the build process, if you see the following error
+
+```
+find: 'dwarfdump': No such file or directory
+```
+
+This is due to the fact that the ```dwarfdump``` tool is not installed.  To install it, run the following command:
+
+```
+sudo apt install dwarfdump
+```
